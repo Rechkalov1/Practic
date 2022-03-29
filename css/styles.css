@@ -55,7 +55,7 @@ body {
   box-sizing: border-box;
   border-radius: 25px;
   border: 1px solid var(--orange-color);
-
+  cursor: pointer;
   text-transform: uppercase;
 }
 /* Стилизация Секции */
@@ -199,14 +199,25 @@ body {
 }
 .button {
   font-family: var(--second-family);
-
+  align-items: center;
   font-weight: var(--font-weight600);
   font-size: 11px;
   line-height: 1.36;
-  text-align: right;
   letter-spacing: 0.1em;
   color: var(--white-color);
   background-color: transparent;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 50px;
+}
+.button:hover,
+.button:focus {
+  background: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  box-sizing: border-box;
+  border-radius: 25px;
 }
 /* Main Секция */
 .portfolio-info {
@@ -323,4 +334,39 @@ body {
   letter-spacing: 0.05em;
   margin-bottom: 44px;
   color: var(--white-color);
+}
+/* Секция Довольные клиенты */
+.clients {
+  display: flex;
+}
+.clients-info {
+  padding: 30px 40px;
+  flex-basis: calc(100% / 2);
+}
+.clients-cart {
+  display: flex;
+  flex-wrap: wrap;
+  width: 170px;
+  height: 133px;
+  background: #f7f7f7;
+}
+.clients-number {
+  font-family: var(--main-family);
+
+  font-weight: var(--font-weight700);
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--p-color);
+}
+.clients-coments {
+  font-family: var(--main-family);
+  font-weight: var(--font-weight600);
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+
+  color: var(--p-color);
 }
